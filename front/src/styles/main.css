@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "3270SemiCondensed Nerd Font";
+}
+#root {
+    display: flex;
+    justify-content: center;
+}
+.App {
+    width: 100%;
+}
+.live-out {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: blanchedalmond;
+    border: 1px solid saddlebrown;
+    padding: 10px;
+}
+.marg {
+    margin: 1em;
+    text-align: center;
+}
+.gr {
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.gr-m {
+    margin-top: 20em;
+}
+.card {
+    margin-top: 2em;
+    width: 20em;
+    height: 30em;
+    margin-left: auto;
+    margin-right: auto;
+    perspective: 1000px;
+    cursor: pointer;
+    position: relative;
+}
+
+.card.flipped .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-inner {
+    width: 110%;
+    height: 110%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    transform: rotateY(0deg);
+}
+
+.card-front,
+.card-back {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.card-front {
+    transform: rotateY(0deg);
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+}
+
+
+.card-back {
+    transform: rotateY(180deg);
+    background-color: #000000;
+}
+.card-value {
+    text-align: center;
+    margin: 0.5em;
+    font-size: small;
+}
+.progress-bar {
+    width: 200px; /* Ширина полоски */
+    height: 20px; /* Высота полоски */
+    margin-top: 2em;
+}
+
+.progress {
+    height: 100%;
+    transition: width 0.1s ease-in-out;
+    margin-top: -20px;
+}
+.progress-back {
+    height: 100%;
+}
+.g {
+    background-color: #4caf50; /* Цвет заполнения */
+}
+.g-b {
+    background-color: #19491a; /* Цвет заполнения */
+}
+.y {
+    background-color: #f5e782; /* Цвет заполнения */
+}
+.y-b {
+    background-color: #98783a; /* Цвет заполнения */
+}
+.p {
+    background-color: #a54caf; /* Цвет заполнения */
+}
+.p-b {
+    background-color: #6d1070; /* Цвет заполнения */
+}
+.r {
+    background-color: #ee7f7f; /* Цвет заполнения */
+}
+.r-b {
+    background-color: #911818; /* Цвет заполнения */
+}
+.pp{
+    text-align: center;
+}
+
+.bt {
+    width: 100%;
+    height: 2em;
+    margin-left: 21em;
+    color: black;
+}
+.bt_div {
+    width: 100%;
+    height: 2em;
+    margin-top: 1em;
+}
